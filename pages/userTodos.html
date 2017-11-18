@@ -1,0 +1,35 @@
+<div class="">
+    <div class="center-align">
+        <h1> User Todos</h1>
+    </div>
+    <div class="todos-block">
+        <div  class="todos-css"> 
+            <div ng-repeat="todo in userTodos" class="todos-box">
+                <div ng-if="todo.completed">
+                    <strike>
+                        <span class"">{{todo.title}}</span>
+                        <span class="right-align">                       
+                            <input type="checkbox"ng-model="todoStatus"ng-checked="todo.completed" ng-click="updateTodo(todo.id, todo.completed)">
+                            <input type="button" value="Delete" ng-click="deleteTodo(todo.id)"/>
+                        </span>
+                    </strike>
+                </div>
+                <div ng-if="!todo.completed">
+                    <span class"">{{todo.title}}</span>
+                    <span class="right-align">                       
+                        <input type="checkbox"ng-model="todoStatus"ng-checked="todo.completed" ng-click="updateTodo(todo.id, todo.completed)">
+                        <input type="button" value="Delete" ng-click="deleteTodo(todo.id)"/>
+                    </span>
+                </div>
+            </div>
+
+            <div class="top-margin">
+                <input type="text" ng-model="newTodo" />
+                <input type="button" value="Add Todo" ng-click="addNewTodo()"/>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+

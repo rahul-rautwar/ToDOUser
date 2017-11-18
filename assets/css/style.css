@@ -1,0 +1,40 @@
+.cards{
+    display: inline-block;
+    border: 1px solid lightblue;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.userName{
+    color:blue;
+    font-weight: bold;
+}
+.todo-text{
+    text-align: right;
+}
+.todos-css{
+    display: table-cell;
+    vertical-align: middle;
+}
+.todos-block{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px !important;
+    overflow-y: visible;
+}
+.todos-box{    
+    border: 1px solid lightblue;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.top-margin{
+    margin-top: 10px;
+}
+.center-align{
+    text-align: center;
+}
+.right-align{
+    float:right;
+}

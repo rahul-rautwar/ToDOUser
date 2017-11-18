@@ -1,0 +1,12 @@
+<div>
+    <h1> User Cards</h1>
+    <div ng-repeat="user in userData" class="cards"> 
+        <div><span>Name : </span> <span class"userName">{{user.name}}</span></div>
+        <div><span>Email : </span> {{user.email}}</div>
+        <div><span>Phone : </span> {{user.phone}}</div>
+        <div><span>Company : </span> {{user.company.name}}</div>
+        <div><span>Address : </span> {{user.address.city}}</div>
+        <div class="todo-text"><a href="#!/todos/{{user.id}}">View ToDos </a></div>
+        
+    </div>
+</div>
