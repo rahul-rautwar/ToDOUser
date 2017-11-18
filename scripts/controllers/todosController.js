@@ -3,11 +3,7 @@ app.controller("todosController",function($scope, $routeParams, userService){
 
     if($routeParams){
         $scope.userID = $routeParams.userid;
-    }else{
-        $scope.userID = 1;
     }
-
-    
     $scope.userTodos = [];
     $scope.getTodosData = function(){
         var reqData ={};
